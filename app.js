@@ -10,8 +10,11 @@ execSQL.connect({
 // execSQL.executeFile(process.argv[2])
 
 
+var cwd = process.cwd()
 
-function run(file){
+var file = path.join(cwd, process.argv[2]);
+
+function run(){
     execSQL.executeFile(file, function(err){
         if (err) throw err;
         execSQL.disconnect();
