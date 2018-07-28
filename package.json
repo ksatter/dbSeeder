@@ -18,6 +18,7 @@
   "bugs": {
     "url": "https://github.com/ksatter/mysql-seeder/issues"
   },
+  "preferGlobal": true,
   "homepage": "https://github.com/ksatter/mysql-seeder#readme",
   "dependencies": {
     "exec-sql": "^2.0.2"
