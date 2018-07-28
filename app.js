@@ -1,24 +1,26 @@
-var execSQL = require("exec-sql")
+var execSQL = require("exec-sql");
+var path = require('path');
 
-execSQL.connect({
+
+ execSQL.connect({
     'database': 'mysql',
     'user': 'root',
     'password': '1113406'
 });
 
-// execSQL.executeFile(process.argv[2])
+var cwd = process.cwd();
+var filePath = path.join(cwd, process.argv[2]);
+
+console.log(filePath)
 
 
-
-
-
-
-function run(file){
-    execSQL.executeFile(file, function(err){
+function run(){
+    execSQL.executeFile(filePath, function(err){
         if (err) throw err;
         execSQL.disconnect();
         console.log('Done!');
-    })
+    });
 }
 
-module.exports = run()
+run()
+//module.exports = run()
