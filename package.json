@@ -21,6 +21,7 @@
   "preferGlobal": true,
   "homepage": "https://github.com/ksatter/mysql-seeder#readme",
   "dependencies": {
-    "exec-sql": "^2.0.2"
+    "exec-sql": "^2.0.2",
+    "path": "^0.12.7"
   }
 }

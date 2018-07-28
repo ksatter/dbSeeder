@@ -2,7 +2,7 @@ var execSQL = require("exec-sql");
 var path = require('path');
 
 
- execSQL.connect({
+execSQL.connect({
     'database': 'mysql',
     'user': 'root',
     'password': '1113406'
@@ -11,7 +11,7 @@ var path = require('path');
 var cwd = process.cwd();
 var filePath = path.join(cwd, process.argv[2]);
 
-console.log(filePath)
+console.log(filePath + "**")
 
 
 function run(){
