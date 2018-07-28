@@ -1,6 +1,6 @@
 {
   "name": "mysql-seeder",
-  "version": "1.14.0",
+  "version": "1.15.0",
   "description": "Run SQL files in node",
   "main": "app.js",
   "scripts": {
