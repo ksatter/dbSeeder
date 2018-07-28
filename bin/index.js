@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var path = require("path");
+var path = require('path');
 
 var app = require('../app.js');
 
