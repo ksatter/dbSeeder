@@ -8,4 +8,4 @@ var filePath = path.join(cwd, process.argv[2]);
 
 console.log(filePath + "**");
 
-//app(filePath);
+app(filePath);
