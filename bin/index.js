@@ -5,6 +5,8 @@ var app = require('../app.js');
 
 var cwd = process.cwd();
 console.log(cwd) 
-//var file = path.join(cwd, process.argv[2]);
+
+var file = path.join(cwd, process.argv[2]);
+conaolw.log(file);
 
 app.run(file)

@@ -1,5 +1,4 @@
-var execSQL = require("exec-sql");
-var path = require("path")
+var execSQL = require("exec-sql")
 
 execSQL.connect({
     'database': 'mysql',
